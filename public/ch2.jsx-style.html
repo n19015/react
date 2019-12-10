@@ -1,6 +1,6 @@
 <!DOCTYPE html><html><head>
   <meta charset="utf-8">
-  <title>test</title>
+  <title>css</title>
   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
   <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
@@ -10,12 +10,22 @@
     ReactDOM.render(
       getDOM(),
       document.getElementById("root")
-    );
+    )
     function getDOM() {
+      const css1 = {
+        "color": "red",
+        "background-color": "#f0f0ff",
+        "font-size": "2em"
+      }
+      const css2 = {
+        color: "blue",
+        backgroundColor: "#fff0f0",
+        fontSize: "2em"
+      }
       return (
         <div>
-          <p>time is money</p>
-          <p>icecreame</p>
+          <p style={css1}>time is money</p>
+          <p style={css2}>icecreame</p>
         </div>
       )
     }
